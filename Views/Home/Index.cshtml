@@ -1,0 +1,55 @@
+﻿@{
+	ViewData["Title"] = "Página Principal";
+}
+<div class="jumbotron">
+	<h1 class="display-4">Bienvenido a la Biblioteca Virtual</h1>
+	<p class="lead">Gestiona tus libros, autores, categorías y editoriales desde aquí.</p>
+	<hr class="my-4">
+	<p>Haz clic en cualquiera de los enlaces a continuación para empezar a gestionar los datos.</p>
+</div>
+<div class="row">
+	<div class="col-md-3">
+		<div class="card">
+			<div class="card-header">
+				<h4>Autores</h4>
+			</div>
+			<div class="card-body">
+				<p>Gestiona la información de los autores.</p>
+				<a href="@Url.Action("Index", "Autor")" class="btn btn-primary">Ir a Autores</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="card">
+			<div class="card-header">
+				<h4>Libros</h4>
+			</div>
+			<div class="card-body">
+				<p>Gestiona la información de los libros.</p>
+				<a href="@Url.Action("Index", "Libro")" class="btn btn-primary">Ir a Libros</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="card">
+			<div class="card-header">
+				<h4>Categorías</h4>
+			</div>
+			<div class="card-body">
+				<p>Gestiona las categorías de los libros.</p>
+				<a href="@Url.Action("Index", "Categoria")" class="btn btn-primary">Ir a Categorías</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="card">
+			<div class="card-header">
+				<h4>Editoriales</h4>
+			</div>
+			<div class="card-body">
+				<p>Gestiona la información de las editoriales.</p>
+				<a href="@Url.Action("Index", "Editorial")" class="btn btn-primary">Ir a Editoriales</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,25 @@
+﻿@model Editorial
+<h1>Crear Editorial</h1>
+<form asp-action="Create">
+	<div class="form-group">
+		<label for="Nombre">Nombre</label>
+		<input type="text" class="form-control" id="Nombre" name="Nombre" value="@Model?.Nombre" required />
+	</div>
+	<div class="form-group">
+		<label for="LibroId">Libro</label>
+		<select class="form-control" id="LibroId" name="LibroId">
+			@if (ViewBag.Libros != null)
+			{
+				foreach (var libro in ViewBag.Libros)
+				{
+					<option value="@libro.Value">@libro.Text</option>
+				}
+			}
+			else
+			{
+				<option value="">No hay libros disponibles</option>
+			}
+		</select>
+	</div>
+	<button type="submit" class="btn btn-success">Crear</button>
+</form>

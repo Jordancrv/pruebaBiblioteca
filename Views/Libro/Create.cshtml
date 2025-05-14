@@ -1,0 +1,41 @@
+﻿@model Libro
+<h1>Crear Libro</h1>
+<form asp-action="Create">
+ <div class="form-group">
+ <label for="Titulo">Título</label>
+ <input type="text" class="form-control" id="Titulo" name="Titulo" value="@Model?.Titulo" required />
+ </div>
+ <div class="form-group">
+ <label for="AutorId">Autor</label>
+ <select class="form-control" id="AutorId" name="AutorId">
+ @if (ViewBag.Autores != null)
+ {
+ foreach (var autor in ViewBag.Autores)
+ {
+ <option value="@autor.Value">@autor.Text</option>
+ }
+ }
+ else
+ {
+ <option value="">No hay autores disponibles</option>
+ }
+ </select>
+ </div>
+ <div class="form-group">
+ <label for="CategoriaId">Categorías</label>
+ <select multiple class="form-control" id="CategoriaId" name="CategoriaId">
+ @if (ViewBag.Categorias != null)
+ {
+ foreach (var categoria in ViewBag.Categorias)
+ {
+ <option value="@categoria.Value">@categoria.Text</option>
+ }
+ }
+ else
+ {
+ <option value="">No hay categorías disponibles</option>
+ }
+ </select>
+ </div>
+ <button type="submit" class="btn btn-success">Crear</button>
+</form>

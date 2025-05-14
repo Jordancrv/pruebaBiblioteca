@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Sesion7.Models.Editorial>
+<h1>Editoriales</h1>
+<p>
+	<a class="btn btn-primary" href="@Url.Action("Create")">Crear Nueva Editorial</a>
+</p>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Nombre de la Editorial</th>
+			<th>Libros</th>
+			<th>Acciones</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var editorial in Model)
+		{
+			<tr>
+				<td>@editorial.Nombre</td>
+				<td>@editorial.Libro.Titulo</td>
+
+
+				<td>
+					<a href="@Url.Action("Edit", "Categoria", new { id = editorial.EditorialId })">Editar</a> |
+					<a href="@Url.Action("Delete", "Categoria", new { id = editorial.EditorialId })">Eliminar</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

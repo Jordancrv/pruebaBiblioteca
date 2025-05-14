@@ -1,0 +1,8 @@
+C:\Users\jorda\source\repos\pruebaBiblioteca\pruebaBiblioteca\obj\Debug\net8.0\pruebaBiblioteca.csproj.AssemblyReference.cache
+C:\Users\jorda\source\repos\pruebaBiblioteca\pruebaBiblioteca\obj\Debug\net8.0\pruebaBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jorda\source\repos\pruebaBiblioteca\pruebaBiblioteca\obj\Debug\net8.0\pruebaBiblioteca.AssemblyInfoInputs.cache
+C:\Users\jorda\source\repos\pruebaBiblioteca\pruebaBiblioteca\obj\Debug\net8.0\pruebaBiblioteca.AssemblyInfo.cs
+C:\Users\jorda\source\repos\pruebaBiblioteca\pruebaBiblioteca\obj\Debug\net8.0\pruebaBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\jorda\source\repos\pruebaBiblioteca\pruebaBiblioteca\obj\Debug\net8.0\pruebaBiblioteca.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jorda\source\repos\pruebaBiblioteca\pruebaBiblioteca\obj\Debug\net8.0\pruebaBiblioteca.RazorAssemblyInfo.cache
+C:\Users\jorda\source\repos\pruebaBiblioteca\pruebaBiblioteca\obj\Debug\net8.0\pruebaBiblioteca.RazorAssemblyInfo.cs

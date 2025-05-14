@@ -1,0 +1,12 @@
+﻿@model Sesion7.Models.Categorium
+@{
+	ViewData["Title"] = "Crear Categoría";
+}
+<h2>@ViewData["Title"]</h2>
+<form asp-action="Create" method="post">
+	<div class="form-group">
+		<label for="Nombre">Nombre de la Categoría</label>
+		<input type="text" class="form-control" id="Nombre" name="Nombre" required />
+	</div>
+	<button type="submit" class="btn btn-primary">Crear</button>
+</form>

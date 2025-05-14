@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Categorium>
+<h1>Categorías</h1>
+<p>
+	<a class="btn btn-primary" href="@Url.Action("Create")">Crear Nueva Categoría</a>
+</p>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Libros</th>
+			<th>Acciones</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var categoria in Model)
+		{
+			<tr>
+				<td>@categoria.Nombre</td>
+				<td>
+					@foreach (var libro in categoria.Libros.Select(lc => lc))
+					{
+						<p>@libro.Titulo</p>
+					}
+				</td>
+				<td>
+					<a href="@Url.Action("Edit", "Categoria", new { id = categoria.CategoriaId })">Editar</a> |
+					<a href="@Url.Action("Delete", "Categoria", new { id = categoria.CategoriaId })">Eliminar</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
